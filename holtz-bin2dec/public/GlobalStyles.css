@@ -1916,4 +1916,45 @@
 
 .d-list-item {
   display: list-item !important;
+}
+
+.p-absolute {
+  position: absolute !important;
+}
+
+.p-fixed {
+  position: fixed !important;
+}
+
+.p-relative {
+  position: relative !important;
+}
+
+.p-static {
+  position: static !important;
+}
+
+.p-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+.p--ms-page {
+  position: -ms-page !important;
+}
+
+.p--webkit-sticky {
+  position: -webkit-sticky !important;
+}
+
+.p-inherit {
+  position: inherit !important;
+}
+
+.p-initial {
+  position: initial !important;
+}
+
+.p-unset {
+  position: unset !important;
 }/*# sourceMappingURL=GlobalStyles.css.map */

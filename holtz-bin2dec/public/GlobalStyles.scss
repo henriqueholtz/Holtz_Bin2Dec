@@ -52,6 +52,24 @@ $views: (
   }
 }
 
+$positions: (
+  absolute,
+  fixed,
+  relative,
+  static,
+  sticky,
+  -ms-page,
+  -webkit-sticky,
+  inherit,
+  initial,
+  unset
+);
+@each $position in $positions {
+  .p-#{$position} {
+    position: #{$position} !important;
+  }
+}
+
 //************************\\
 //         MIXINS          \\
 //*************************//
@@ -68,6 +86,3 @@ $views: (
 //************************\\
 //         CLASSES         \\
 //*************************//
-// .d-inline-block {
-//   display: inline-block;
-// }

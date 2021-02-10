@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2 className="d-inline-block" >Development from Henrique Holtz</h2>
-        <span style={{ position: 'relative' }} className="float-right pr-10 text-10 t-50">@2021</span>
+        <span className="p-relative float-right pr-10 text-10 t-50">@2021</span>
       </header>
       <body>
         <Card />
