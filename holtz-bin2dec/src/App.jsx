@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Components/Card'
 import Options from './Components/Options'
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Button } from "@material-ui/core";
 
 export default function App() {
   const classes = useStyles();
@@ -16,6 +16,9 @@ export default function App() {
         <Options />
         <Card input/>
         <Card />
+        <Button className={classes.button}>
+            Convert
+        </Button>
       </body>
       <footer className={classes.footer}>
         <h5 className="d-inline-block" >Development from Henrique Holtz</h5>
@@ -29,7 +32,9 @@ export default function App() {
 const useStyles = makeStyles((theme) => ({
   app: {
     margin: 0,
-    padding: 0
+    padding: 0,
+    width: '100vw',
+    height: '100vh'
   },
   header: {
     padding: '20px 0',
@@ -51,5 +56,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#333',
     color: '#ddd',
     fontWeight: 300
+  },
+  button:{
+    display: 'block',
+    width: '150px',
+    marginLeft: '46vw',
+    marginBottom: '50px',
+    backgroundColor: '#ccc',
+    bottom: '50px'
   }
 }))
