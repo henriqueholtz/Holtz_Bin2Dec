@@ -1,0 +1,15 @@
+.App,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+}
