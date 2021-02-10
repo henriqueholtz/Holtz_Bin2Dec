@@ -1,0 +1,73 @@
+$spaceamounts: (0, 5, 8, 10, 15, 16, 20, 24, 30, 40, 50, 75, 100);
+$sides: (top, bottom, left, right);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0 ,1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .m-#{$space} {
+      padding: #{$space}px !important;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+    .text-#{$space} {
+      font-size: #{$space}px !important ;
+    }
+    .b-#{$space} {
+      bottom: #{$space}px !important;
+    }
+    .t-#{$space} {
+      top: #{$space}px !important;
+    }
+    .r-#{$space} {
+      right: #{$space}px !important;
+    }
+    .l-#{$space} {
+      left: #{$space}px !important;
+    }
+  }
+}
+
+$views: (
+  block,
+  contents,
+  flex,
+  flexbox,
+  flow-root,
+  grid,
+  inline,
+  inline-block,
+  inline-flex,
+  inline-flexbox,
+  inline-table,
+  list-item
+);
+@each $display in $views {
+  .d-#{$display} {
+    display: #{$display} !important;
+  }
+}
+
+//************************\\
+//         MIXINS          \\
+//*************************//
+// @mixin text($size: false, $color: false) {
+//   @if $size {
+//     font-size: $size !important;
+//     color: blue !important;
+//   }
+//   @if $color {
+//     color: $color !important;
+//   }
+// }
+
+//************************\\
+//         CLASSES         \\
+//*************************//
+// .d-inline-block {
+//   display: inline-block;
+// }
