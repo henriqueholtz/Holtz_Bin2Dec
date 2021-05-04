@@ -1,16 +1,34 @@
+label {
+  padding-top: 10px;
+}
+
 .label {
   position: relative;
+  margin-left: 108px;
+  margin-right: 13px;
+  min-width: 34px;
+  padding-top: 15px;
 }
 
 .input {
-  margin-left: 30px;
+  border: none;
   border-radius: 8px;
+  max-width: 186px;
   background-color: var(--gray-500);
   color: #83dbd0;
   text-align: end;
   padding: 5px;
+
+  p {
+    font-size: 14px;
+    color: #83dbd0;
+  }
+  
+  input {
+    color: #fff;
+  }
 }
 
-.MuiTypography-colorTextSecondary {
-  color: #fff !important;
+.inputAdornment {
+  padding-right: 10px;
 }
