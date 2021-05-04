@@ -13,14 +13,7 @@ export default function CustomInput({origin, value, type, onChange}) {
     return (
         <div>
             <label className={styles.label} htmlFor={type}>{origin}</label>
-            {/* <input className={styles.input} name={type} type="number" value={value} onChange={onChange} min={0} width={186} placeholder={type} /> */}
-            {/* <span id="textField">
-                <TextField id="x" size="medium" color="#FFF" name={type} type="number" variant="outlined" value={value} onChange={onChange} inputProps={inputProps} InputProps={{
-                startAdornment: <InputAdornment position="start" className={styles.inputAdornment} >{type}</InputAdornment>,
-                          }} color="#FFF !important"/>
-            </span> */}
             <TextField
-                label="labelFix"
                 color="white"
                 id={type}
                 className={styles.input}
