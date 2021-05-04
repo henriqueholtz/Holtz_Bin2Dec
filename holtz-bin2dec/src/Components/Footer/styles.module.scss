@@ -1,6 +1,31 @@
 .footer {
   position: absolute;
   bottom: 15px;
-  left: 49vw;
+  left: 45vw;
   color: #fff;
+
+  a {
+    cursor: pointer;
+
+    // &:last-child {
+    //   margin-left: 29px;
+
+    //   &::before {
+    //     content: "";
+    //     margin-left: 29px;
+    //   }
+    // }
+  }
+}
+
+// .facebookIcon {
+//   cursor: pointer;
+// }
+
+.instagramIcon {
+  margin-left: 29px;
+}
+
+.githubIcon {
+  margin-left: 29px;
 }

@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core";
 import Footer from './Components/Footer';
 import Bin2Dec from './Components/Bin2Dec';
 
+import styles from '../src/styles/globalStyles.module.scss'
+
 export default function App() {
   const classes = useStyles();
 
@@ -22,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     justifyContent: 'center',
     textAlign: 'center',
-    backgroundColor: '#4B4B4B',
+    backgroundColor: 'var(--gray-500)',
     width: '100vw',
     height: '100vh'
   }
