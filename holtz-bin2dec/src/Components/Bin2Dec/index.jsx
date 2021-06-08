@@ -29,7 +29,7 @@ export default function Bin2Dec() {
         let resp = bin.replace('1', '');
         resp = bin.replace('0', '');
 
-        return resp.length === 0
+        return resp?.length > 0
     }
 
     function toggleCalculate() {
