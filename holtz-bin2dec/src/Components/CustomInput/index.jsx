@@ -14,7 +14,6 @@ export default function CustomInput({origin, value, type, onChange}) {
         <div>
             <label className={styles.label} htmlFor={type}>{origin}</label>
             <TextField
-                color="white"
                 id={type}
                 className={styles.input}
                 value={value}

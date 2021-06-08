@@ -1,14 +1,29 @@
 import React, { useState } from 'react';
 import CustomInput from '../CustomInput';
 import ChangeIcon from '../Bin2Dec/ChangeIcon'
+import * as HelperConverter from '../../Functions/HelperConverter'
 
 import styles from '../Bin2Dec/styles.module.scss';
 
 export default function Bin2Dec() {
-    const [fromValue, setFromValue] = useState(0);
-    const [toValue, setToValue] = useState(0);
-    const [fromType, setFromType] = useState('Binary');
-    const [toType, setToType] = useState('Decimal');
+    const keyBinaryValue = 'binaryValue';
+    const keyDecimalValue = 'decimalValue';
+    const keyFromIsBinary = 'fromIsBinary';
+    const [binaryValue, _setBinaryValue] = useState(parseInt(localStorage.getItem(keyBinaryValue)) || 0);
+    const [decimalValue, _setDecimalValue] = useState(parseInt(localStorage.getItem(keyDecimalValue)) || 0)
+    const [fromIsBinary, setFromIsBinary] = useState(localStorage.getItem(keyFromIsBinary) || true)
+
+    function setDecimalValue(value) {
+        const newValue = value.toString().match(/[0-9]/g).join('');
+        _setDecimalValue(value)
+        localStorage.setItem(keyDecimalValue, value);
+    }
+
+    function setBinaryValue(value) {
+        const newValue = value.toString().match(/[0-1]/g).join('');
+        _setBinaryValue(newValue);
+        localStorage.setItem(keyBinaryValue, newValue);
+    }
 
     function funcToDecimal(bin) {
         let dec = 0;
@@ -24,44 +39,37 @@ export default function Bin2Dec() {
         return (dec >>> 0).toString(2);
     }
 
-    function funcIsBinaryValid(bin) {
-        if (!bin || bin.length === 0) return false;
-        let resp = bin.replace('1', '');
-        resp = bin.replace('0', '');
-
-        return resp?.length > 0
-    }
-
     function toggleCalculate() {
-        const fromIsBinary = fromType === 'Binary';
-        const binaryValue = fromIsBinary ? fromValue : toValue;
-        const isBinaryValid = fromIsBinary ? funcIsBinaryValid(binaryValue) : false;
-        const decimalValue = fromIsBinary ? toValue : fromValue;
-        
-        if (fromIsBinary && binaryValue && isBinaryValid ) {
+        if (fromIsBinary && binaryValue ) {
             setToValue(funcToDecimal(binaryValue));
         }
         else if (decimalValue && !fromIsBinary){
             setToValue(funcToBinary(decimalValue))
         }
         else {
-            alert(`Don't is possible converter the number ${fromValue} of ${fromType} to ${toType}`);
+            alert(`Don't is possible converter the number binary ${binaryValue} and decimal ${decimalValue}`);
         }
     }
 
     function toggleType() {
-        const oldFromValue = fromValue;
-        const oldToValue = toValue;
-        if (fromType === 'Binary'){
-            setFromType('Decimal');
-            setToType('Binary');
+        localStorage.setItem(keyFromIsBinary, !fromIsBinary)
+        setFromIsBinary(!fromIsBinary)
+    }
+
+    function setFromValue(value) {
+        if (fromIsBinary) {
+            setBinaryValue(value);
+        } else {
+            setDecimalValue(value);
         }
-        else {
-            setFromType('Binary');
-            setToType('Decimal');
+    }
+
+    function setToValue(value) {
+        if (fromIsBinary) {
+            setDecimalValue(value);
+        } else {
+            setBinaryValue(value);
         }
-        setFromValue(oldToValue);
-        setToValue(oldFromValue);
     }
 
     return (
@@ -71,7 +79,7 @@ export default function Bin2Dec() {
                 <span className={styles.subTitle}>Convert Binary to Decimal or Decimal to Binary</span>
 
                 <div className={styles.calculator}>
-                    <CustomInput origin="From" value={fromValue} type={fromType} onChange={(e) => setFromValue(e.target.value)}/>
+                    <CustomInput origin="From" value={fromIsBinary ? binaryValue : decimalValue} type={fromIsBinary ? 'Binary' : 'Decimal'} onChange={(e) => setFromValue(e.target.value)}/>
                     <div>
                         <button type="button" className={styles.changeButton} onClick={toggleType} >
                             <ChangeIcon />
@@ -79,8 +87,8 @@ export default function Bin2Dec() {
 
                         <span className={styles.equal}>=</span>
                     </div>
-                    <CustomInput origin="To" value={toValue} type={toType} onChange={(e) => setToValue(e.target.value)}/>
-                    <button type="button" onClick={toggleCalculate}>
+                    <CustomInput origin="To" value={fromIsBinary ? decimalValue : binaryValue} type={fromIsBinary ? 'Decimal' : 'Binary'} onChange={(e) => setToValue(e.target.value)}/>
+                    <button type="button" onClick={toggleCalculate} className={styles.button}>
                         Calculate
                     </button>
                 </div>
