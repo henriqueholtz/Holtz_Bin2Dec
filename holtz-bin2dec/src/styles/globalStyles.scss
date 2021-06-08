@@ -1,0 +1,10 @@
+:root {
+  --white: #fff;
+
+  --gray-500: #4b4b4b;
+  --gray-600: #414141;
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.MuiOutlinedInput-inputAdornedStart {
+  text-align: end;
+}

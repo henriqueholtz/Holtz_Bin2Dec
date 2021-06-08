@@ -1,7 +1,10 @@
 .footer {
   position: absolute;
+  width: 40%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
   bottom: 15px;
-  left: 45vw;
   color: #fff;
 
   a {
@@ -9,10 +12,6 @@
   }
 }
 
-.instagramIcon {
-  margin-left: 29px;
-}
-
 .githubIcon {
-  margin-left: 29px;
+  margin-top: -5px;
 }
