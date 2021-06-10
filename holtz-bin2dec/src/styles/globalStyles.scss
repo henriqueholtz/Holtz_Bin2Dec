@@ -1,8 +1,26 @@
 :root {
-  --white: #fff;
+  // --white: #fff;
+  --default-color: #1C1C1C;
+  --subtitle-color: #7D7D7D;
+  --text-color-secondary: #2B8075;
 
-  --gray-500: #4b4b4b;
-  --gray-600: #414141;
+  --bg-input: #fff;
+  --bg-app: #fff;
+
+  // --gray-500: #4b4b4b;
+  // --gray-600: #414141;
+
+  .dark-mode {
+    --default-color: #fff;
+    --subtitle-color: #c0c0c0;
+    --text-color-secondary: #83dbd0;
+  
+    
+    --bg-input: #caf;
+    --bg-app: #4b4b4b;
+  
+    --bg-input: var(--gray-500);
+  }
 }
 
 .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.MuiOutlinedInput-inputAdornedStart {

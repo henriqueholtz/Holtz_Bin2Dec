@@ -5,7 +5,9 @@ import * as HelperConverter from '../../Functions/HelperConverter'
 
 import styles from '../Bin2Dec/styles.module.scss';
 
-export default function Bin2Dec() {
+export default function Bin2Dec({darkModeObj}) {
+    const { darkMode, setDarkMode } = darkModeObj;
+    console.log('darkMode', darkModeObj)
     const keyBinaryValue = 'binaryValue';
     const keyDecimalValue = 'decimalValue';
     const keyFromIsBinary = 'fromIsBinary';
@@ -81,6 +83,8 @@ export default function Bin2Dec() {
                         <span className={styles.equal}>=</span>
                     </div>
                     <CustomInput origin="To" value={fromIsBinary ? decimalValue : binaryValue} type={fromIsBinary ? 'Decimal' : 'Binary'} onChange={(e) => toggleFromValue(e.target.value)}/>
+
+                    <input type="checkbox" id="darkMode" onClick={() => setDarkMode(!darkMode)} />
                 </div>
             </div>
         </div>

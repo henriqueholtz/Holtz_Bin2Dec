@@ -14,18 +14,18 @@ label {
   border: none;
   border-radius: 8px;
   max-width: 186px;
-  background-color: var(--gray-500);
-  color: #83dbd0;
+  background-color: var(--bg-input);
+  color: var(--text-color-secondary);
   text-align: end;
   padding: 5px;
 
   p {
     font-size: 14px;
-    color: #83dbd0;
+    color: var(--text-color-secondary);
   }
   
   input {
-    color: #fff;
+    color: var(--default-color);
   }
 }
 

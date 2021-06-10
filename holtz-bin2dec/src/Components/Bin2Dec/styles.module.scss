@@ -2,7 +2,7 @@
   position: absolute;
   top: -28px;
   border-radius: 20px;
-  background-color: #414141;
+  background-color: var(--teste);
   width: 449px;
   height: 460px;
   opacity: 0.9;
@@ -15,21 +15,21 @@
 
 .title {
   font-size: 36px;
-  color: #fff;
+  color: var(--default-color)
 }
 
 .subTitle {
   font-size: 14px;
   font-weight: 400;
   display: block;
-  color: #c0c0c0;
+  color: var(--subtitle-color);
 }
 
 .calculator {
   position: absolute;
   top: 210px;
   text-align: center;
-  color: #83dbd0;
+  color: var(--text-color-secondary);
 }
 
 .changeButton {
