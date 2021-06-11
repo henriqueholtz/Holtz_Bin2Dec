@@ -2,7 +2,7 @@
   position: absolute;
   top: -28px;
   border-radius: 20px;
-  background-color: var(--teste);
+  background-color: var(--bg-wrapper-calculator);
   width: 449px;
   height: 460px;
   opacity: 0.9;
@@ -15,12 +15,12 @@
 
 .title {
   font-size: 36px;
-  color: var(--default-color)
+  color: var(--text-color-primary)
 }
 
 .subTitle {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   display: block;
   color: var(--subtitle-color);
 }
@@ -36,6 +36,10 @@
   margin: 16px 0 16px 155px;
   border: none;
   border-radius: 3px;
+  background-color: var(--change-icon-bg-color);
+  svg {
+    fill: var(--change-icon-color) !important;
+  }
 }
 
 .equal {

@@ -5,10 +5,13 @@
   display: flex;
   justify-content: space-around;
   bottom: 15px;
-  color: #fff;
 
   a {
     cursor: pointer;
+  }
+
+  svg {
+    fill: var(--color-footer) !important;
   }
 }
 

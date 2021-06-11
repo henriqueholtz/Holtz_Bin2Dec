@@ -15,17 +15,17 @@ label {
   border-radius: 8px;
   max-width: 186px;
   background-color: var(--bg-input);
-  color: var(--text-color-secondary);
+  color: var(--text-color-primary);
   text-align: end;
   padding: 5px;
 
   p {
     font-size: 14px;
-    color: var(--text-color-secondary);
+    color: var(--text-color-primary);
   }
   
   input {
-    color: var(--default-color);
+    color: var(--text-color-primary);
   }
 }
 
