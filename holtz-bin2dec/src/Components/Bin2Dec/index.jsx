@@ -7,7 +7,6 @@ import styles from '../Bin2Dec/styles.module.scss';
 
 export default function Bin2Dec({darkModeObj}) {
     const { darkMode, setDarkMode } = darkModeObj;
-    console.log('darkMode', darkModeObj)
     const keyBinaryValue = 'binaryValue';
     const keyDecimalValue = 'decimalValue';
     const keyFromIsBinary = 'fromIsBinary';
@@ -40,10 +39,14 @@ export default function Bin2Dec({darkModeObj}) {
     }
 
     function funcToDecimal(bin) {
+        const reversed = bin && bin.length > 0 && bin?.split('').reverse() || null;
+        if (!reversed || !reversed.length > 0) return 0
         let dec = 0;
-      
-        for (let c = bin.length - 1, i = 0; c >= 0; c--, i++) {
-          dec += bin[c] * Math.pow(2, i);
+        
+        for (let c = 0; c < reversed.length; c++) {
+          if (reversed[c] === '1') {
+            dec += Math.pow(2, c);
+          }
         }
       
         return dec;
@@ -55,7 +58,7 @@ export default function Bin2Dec({darkModeObj}) {
 
     function toggleCalculate(value) {
         if (fromIsBinary ) {
-            setDecimalValue(funcToDecimal(parseInt(value)));
+            setDecimalValue(funcToDecimal(value));
         }
         else {
             setBinaryValue(funcToBinary(parseInt(value)))
