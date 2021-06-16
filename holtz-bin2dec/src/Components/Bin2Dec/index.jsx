@@ -78,12 +78,12 @@ export default function Bin2Dec({darkModeObj}) {
 
                 <div className={styles.calculator}>
                     <CustomInput origin="From" value={fromIsBinary ? binaryValue : decimalValue} type={fromIsBinary ? 'Binary' : 'Decimal'} onChange={(e) => toggleFromValue(e.target.value)}/>
-                    <div>
+                    <div className={styles.wrapperChanger}>
                         <button type="button" className={styles.changeButton} onClick={toggleType} >
                             <ChangeIcon />
                         </button>
 
-                        <span className={styles.equal}>=</span>
+                        <span>=</span>
                     </div>
                     <CustomInput origin="To" value={fromIsBinary ? decimalValue : binaryValue} type={fromIsBinary ? 'Decimal' : 'Binary'} onChange={(e) => toggleFromValue(e.target.value)}/>
 
