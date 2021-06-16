@@ -3,7 +3,7 @@
   top: -28px;
   border-radius: 20px;
   background-color: var(--bg-wrapper-calculator);
-  min-width: 420px;
+  min-width: 400px;
   width: 90%;
   max-width: 449px;
   height: 460px;
@@ -28,9 +28,13 @@
 }
 
 .calculator {
-  position: absolute;
-  top: 210px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 52px;
+  @media screen and (max-width: 500px) {
+    padding: 52px 22px;
+  }
   color: var(--text-color-secondary);
 }
 
@@ -42,15 +46,31 @@
 
   span {
     margin-right: 18px;
+    @media screen and (max-width: 500px) {
+      margin-right: 40px;
+    }
   }
 }
 
 .changeButton {
-  margin: 16px 0 16px 155px;
+  margin: 16px 0 16px 52px;
+  @media screen and (max-width: 500px) {
+    margin: 16px 0 16px 75px;
+  }
   border: none;
   border-radius: 3px;
   background-color: var(--change-icon-bg-color);
   svg {
     fill: var(--change-icon-color) !important;
+  }
+}
+
+.reset {
+  text-align: right;
+  margin: 0 7px 7px;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+  @media screen and (max-width: 500px) {
+    margin: 0 30px 7px 0;
   }
 }

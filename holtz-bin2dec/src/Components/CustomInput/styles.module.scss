@@ -4,7 +4,6 @@ label {
 
 .label {
   position: relative;
-  margin-left: 108px;
   margin-right: 13px;
   min-width: 34px;
   padding-top: 15px;
@@ -13,7 +12,7 @@ label {
 .input {
   border: none;
   border-radius: 8px;
-  max-width: 186px;
+  min-width: 186px;
   background-color: var(--bg-input);
   color: var(--text-color-primary);
   text-align: end;

@@ -70,6 +70,13 @@ export default function Bin2Dec({darkModeObj}) {
         setFromIsBinary(!fromIsBinary)
     }
 
+    function handleReset() {
+        setDecimalValue(0);
+        setBinaryValue(0);
+        localStorage.removeItem(keyDecimalValue);
+        localStorage.removeItem(keyBinaryValue);
+    }
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.body}>
@@ -77,6 +84,7 @@ export default function Bin2Dec({darkModeObj}) {
                 <span className={styles.subTitle}>Convert Binary to Decimal or Decimal to Binary</span>
 
                 <div className={styles.calculator}>
+                    <span className={styles.reset} onClick={() => handleReset()}>Reset</span>
                     <CustomInput origin="From" value={fromIsBinary ? binaryValue : decimalValue} type={fromIsBinary ? 'Binary' : 'Decimal'} onChange={(e) => toggleFromValue(e.target.value)}/>
                     <div className={styles.wrapperChanger}>
                         <button type="button" className={styles.changeButton} onClick={toggleType} >
@@ -87,7 +95,10 @@ export default function Bin2Dec({darkModeObj}) {
                     </div>
                     <CustomInput origin="To" value={fromIsBinary ? decimalValue : binaryValue} type={fromIsBinary ? 'Decimal' : 'Binary'} onChange={(e) => toggleFromValue(e.target.value)}/>
 
+<div>
+
                     <input type="checkbox" id="darkMode" onClick={() => setDarkMode(!darkMode)} />
+</div>
                 </div>
             </div>
         </div>
