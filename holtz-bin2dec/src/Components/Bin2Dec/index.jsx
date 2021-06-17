@@ -12,7 +12,8 @@ export default function Bin2Dec({darkModeObj}) {
     const keyFromIsBinary = 'fromIsBinary';
     const [binaryValue, _setBinaryValue] = useState(parseInt(localStorage.getItem(keyBinaryValue)) || 0);
     const [decimalValue, _setDecimalValue] = useState(parseInt(localStorage.getItem(keyDecimalValue)) || 0)
-    const [fromIsBinary, setFromIsBinary] = useState(localStorage.getItem(keyFromIsBinary) == 'false' ? false : true)
+    const [fromIsBinary, setFromIsBinary] = useState(localStorage.getItem(keyFromIsBinary) === 'false' ? false : true)
+    const [animation, setAnimation] = useState(false);
 
     function toggleFromValue(value) {
         if (fromIsBinary) {
@@ -77,14 +78,23 @@ export default function Bin2Dec({darkModeObj}) {
         localStorage.removeItem(keyBinaryValue);
     }
 
+    const toggleTheme = () => {
+        setAnimation(true);
+
+        setTimeout(() => {
+            setAnimation(false);
+            setDarkMode(!darkMode);
+        }, 450);
+    }
+
     return (
         <>
-        <div className={styles.toggleTheme} onClick={() => setDarkMode(!darkMode)} >
+        <div className={`${styles.toggleTheme} ${animation ? styles.animationTheme : ''}`} onClick={() => toggleTheme()} >
             <ChangeThemeIcon />
         </div>
         <div className={styles.wrapper}>
             <div className={styles.body}>
-                <span className={styles.title}>Bin2Dec Converter</span>
+                <span className={styles.title}>Bin<b style={{ color: 'var(--change-icon-bg-color)', fontWeight: 400 }}>2</b>Dec Converter</span>
                 <span className={styles.subTitle}>Convert Binary to Decimal or Decimal to Binary</span>
 
                 <div className={styles.calculator}>
