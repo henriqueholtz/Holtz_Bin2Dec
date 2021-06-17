@@ -4,7 +4,7 @@ You can **acess** this application in **[holtzbin2dec.surge.sh](https://holtzbin
 
 This is a project with ReactJs for converter numbers of binary to decimal or on the contrary
 
-###Characteristics:
+### Characteristics:
 
 * :heavy_check_mark: **ReactJS**
 * :heavy_check_mark: **Material-UI**
