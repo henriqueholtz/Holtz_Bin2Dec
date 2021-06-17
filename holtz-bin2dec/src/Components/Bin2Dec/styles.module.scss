@@ -1,3 +1,19 @@
+.toggleTheme {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  svg {
+    fill: var(--text-color-primary);
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
 .wrapper {
   position: absolute;
   top: -28px;

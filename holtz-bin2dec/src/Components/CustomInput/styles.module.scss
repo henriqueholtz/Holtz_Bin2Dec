@@ -14,20 +14,30 @@ label {
   border-radius: 8px;
   min-width: 186px;
   background-color: var(--bg-input);
-  color: var(--text-color-primary);
+  color: var(--text-color-primary) !important;
   text-align: end;
   padding: 5px;
 
   p {
     font-size: 14px;
-    color: var(--text-color-primary);
+    color: var(--text-color-secondary) !important;
   }
   
   input {
-    color: var(--text-color-primary);
+    color: var(--text-color-primary) !important;
   }
 }
 
 .inputAdornment {
   padding-right: 10px;
+}
+
+:global .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.MuiOutlinedInput-inputAdornedStart{
+  padding: 10px 10px 10px 0 !important;
+  height: 37px;
+}
+:global .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl.MuiInputBase-adornedStart.MuiOutlinedInput-adornedStart {
+  padding: 0 0 0 10px !important;
+  border-radius: 8px !important;
+  // color: var(--text-color-secondary);
 }

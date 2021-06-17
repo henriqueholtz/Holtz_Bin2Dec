@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CustomInput from '../CustomInput';
 import ChangeIcon from '../Bin2Dec/ChangeIcon'
-import * as HelperConverter from '../../Functions/HelperConverter'
+import { ChangeThemeIcon } from './ChangeThemeIcon'
 
 import styles from '../Bin2Dec/styles.module.scss';
 
@@ -78,6 +78,10 @@ export default function Bin2Dec({darkModeObj}) {
     }
 
     return (
+        <>
+        <div className={styles.toggleTheme} onClick={() => setDarkMode(!darkMode)} >
+            <ChangeThemeIcon />
+        </div>
         <div className={styles.wrapper}>
             <div className={styles.body}>
                 <span className={styles.title}>Bin2Dec Converter</span>
@@ -94,13 +98,9 @@ export default function Bin2Dec({darkModeObj}) {
                         <span>=</span>
                     </div>
                     <CustomInput origin="To" value={fromIsBinary ? decimalValue : binaryValue} type={fromIsBinary ? 'Decimal' : 'Binary'} onChange={(e) => toggleFromValue(e.target.value)}/>
-
-<div>
-
-                    <input type="checkbox" id="darkMode" onClick={() => setDarkMode(!darkMode)} />
-</div>
                 </div>
             </div>
         </div>
+        </>
     )
 }
