@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomInput from '../CustomInput';
 import ChangeIcon from '../Bin2Dec/ChangeIcon'
 import { ChangeThemeIcon } from './ChangeThemeIcon'
+import { ConverterToDecimal, ConverterToBinary } from '../../Functions'
 
 import styles from '../Bin2Dec/styles.module.scss';
 
@@ -39,30 +40,12 @@ export default function Bin2Dec({darkModeObj}) {
         if (fromIsBinary) toggleCalculate(newValue)
     }
 
-    function funcToDecimal(bin) {
-        const reversed = bin && bin.length > 0 && bin?.split('').reverse() || null;
-        if (!reversed || !reversed.length > 0) return 0
-        let dec = 0;
-        
-        for (let c = 0; c < reversed.length; c++) {
-          if (reversed[c] === '1') {
-            dec += Math.pow(2, c);
-          }
-        }
-      
-        return dec;
-      }
-      
-    function funcToBinary(dec = 0) {
-        return (dec >>> 0).toString(2);
-    }
-
     function toggleCalculate(value) {
         if (fromIsBinary ) {
-            setDecimalValue(funcToDecimal(value));
+            setDecimalValue(ConverterToDecimal(value));
         }
         else {
-            setBinaryValue(funcToBinary(parseInt(value)))
+            setBinaryValue(ConverterToBinary(parseInt(value)))
         }
     }
 
