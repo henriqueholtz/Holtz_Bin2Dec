@@ -14,6 +14,6 @@ This is a project with ReactJs for converter numbers of binary to decimal or on 
 * :heavy_check_mark: **Simple Animation**
 
 &nbsp;
-#####[Prototype by @ncsantos.](https://www.figma.com/file/QDBBTkB1It2l7Esch1SKwl/Bin2Dec?node-id=0%3A1) :boom:
+####[Prototype by @ncsantos.](https://www.figma.com/file/QDBBTkB1It2l7Esch1SKwl/Bin2Dec?node-id=0%3A1) :boom:
 
 *Inspiration from [florinpop/app-ideas](https://github.com/florinpop17/app-ideas)*
