@@ -24,5 +24,8 @@ This is a project made with ReactJs for converter numbers of binary to decimal o
 
 #### **A short preview:**
 
+LightMode:
 ![image](https://user-images.githubusercontent.com/51380783/133703194-a5735d68-85c4-4f66-9ab9-896ec6ad101e.png)
+
+DarkMode:
 ![image](https://user-images.githubusercontent.com/51380783/133703220-3fe0b2d0-b8d0-4f3d-b270-8ec49ed2d07b.png)
