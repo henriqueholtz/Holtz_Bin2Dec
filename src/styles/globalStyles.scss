@@ -1,0 +1,33 @@
+:root {
+  --subtitle-color: #7D7D7D;
+  --text-color-primary: #1C1C1C;
+  --text-color-secondary: #2B8075;
+  
+  --change-icon-color: #FFF;
+  --change-icon-bg-color: #2B8075;
+
+  --bg-input: #fff;
+  --bg-app: #fff;
+  --bg-wrapper-calculator: #F1F1F1;
+
+  --color-footer: #2B8075;
+
+  .dark-mode {
+    --subtitle-color: #c0c0c0;
+    --text-color-primary: #fff;
+    --text-color-secondary: #83dbd0;
+    
+    --change-icon-color: #414141;
+    --change-icon-bg-color: #83DBD0;
+    
+    --bg-input: #4b4b4b;
+    --bg-app: #4b4b4b;
+    --bg-wrapper-calculator: #414141;
+    
+    --color-footer: #fff;
+  }
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.MuiOutlinedInput-inputAdornedStart {
+  text-align: end;
+}
