@@ -1,6 +1,7 @@
 {
   "name": "holtz-bin2dec",
   "version": "0.1.0",
+  "homepage": "Holtz_Bin2Dec/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
