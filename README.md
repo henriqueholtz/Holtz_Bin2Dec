@@ -1,6 +1,10 @@
 # Welcome to Holtz_Bin2Dec :sunglasses:
 
-You can **acess** this application in **[holtzbin2dec.surge.sh](https://holtzbin2dec.surge.sh/)** (by [surge.sh](https://surge.sh))
+## You can **acess** this application in: 
+
+- **[holtzbin2dec.surge.sh](https://holtzbin2dec.surge.sh/)** (by [surge.sh](https://surge.sh))
+-  **[henrique.holtz.github.io/Holtz_Bin2Dec](https://henriqueholtz.github.io/Holtz_Bin2Dec)** (by [github-pages](https://pages.github.com/))
+
 
 This is a project made with ReactJs for converter numbers of binary to decimal or on the contrary.
 
