@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.88017a75.chunk.css",
-    "main.js": "/static/js/main.ee5f1673.chunk.js",
-    "main.js.map": "/static/js/main.ee5f1673.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7eaad65c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7eaad65c.js.map",
-    "static/js/2.8c5fccd3.chunk.js": "/static/js/2.8c5fccd3.chunk.js",
-    "static/js/2.8c5fccd3.chunk.js.map": "/static/js/2.8c5fccd3.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.88017a75.chunk.css.map": "/static/css/main.88017a75.chunk.css.map",
-    "static/js/2.8c5fccd3.chunk.js.LICENSE.txt": "/static/js/2.8c5fccd3.chunk.js.LICENSE.txt"
+    "main.css": "/Holtz_Bin2Dec/static/css/main.88017a75.chunk.css",
+    "main.js": "/Holtz_Bin2Dec/static/js/main.ee5f1673.chunk.js",
+    "main.js.map": "/Holtz_Bin2Dec/static/js/main.ee5f1673.chunk.js.map",
+    "runtime-main.js": "/Holtz_Bin2Dec/static/js/runtime-main.04c987b4.js",
+    "runtime-main.js.map": "/Holtz_Bin2Dec/static/js/runtime-main.04c987b4.js.map",
+    "static/js/2.8c5fccd3.chunk.js": "/Holtz_Bin2Dec/static/js/2.8c5fccd3.chunk.js",
+    "static/js/2.8c5fccd3.chunk.js.map": "/Holtz_Bin2Dec/static/js/2.8c5fccd3.chunk.js.map",
+    "index.html": "/Holtz_Bin2Dec/index.html",
+    "static/css/main.88017a75.chunk.css.map": "/Holtz_Bin2Dec/static/css/main.88017a75.chunk.css.map",
+    "static/js/2.8c5fccd3.chunk.js.LICENSE.txt": "/Holtz_Bin2Dec/static/js/2.8c5fccd3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7eaad65c.js",
+    "static/js/runtime-main.04c987b4.js",
     "static/js/2.8c5fccd3.chunk.js",
     "static/css/main.88017a75.chunk.css",
     "static/js/main.ee5f1673.chunk.js"
