@@ -18,6 +18,9 @@
 * :heavy_check_mark: **Responsive**
 * :heavy_check_mark: **Simple Animation**
 
+#### You also can clone this repository, install it (with `yarn install`), and run it (with `yarn dev`) only;
+##### After, you can access from `http://localhost:3000` in your prefer browser.
+
 ## **ReactJs**
 ### You can **acess** this application in:
 
