@@ -1,12 +1,30 @@
 # Welcome to Holtz_Bin2Dec :sunglasses:
 
-## You can **acess** this application in: 
+### This application was made with **ReactJs**, and after, migrate to **NextJs**, for converter numbers of binary to decimal or on the contrary.
+
+## **NextJs**
+### You can **acess** this application in:
+
+- **[holtzbin2dec-next.vercel.app](https://holtzbin2dec-next.vercel.app/)** (by [vercel.com](https://vercel.com/))
+
+[Branch master](https://github.com/henriqueholtz/Holtz_Bin2Dec/tree/master)
+
+### Characteristics:
+
+* :heavy_check_mark: **NextJs**
+* :heavy_check_mark: **Material-UI**
+* :heavy_check_mark: **SASS**
+* :heavy_check_mark: **Dark/Light**
+* :heavy_check_mark: **Responsive**
+* :heavy_check_mark: **Simple Animation**
+
+## **ReactJs**
+### You can **acess** this application in:
 
 - **[holtzbin2dec.surge.sh](https://holtzbin2dec.surge.sh/)** (by [surge.sh](https://surge.sh))
 -  **[henrique.holtz.github.io/Holtz_Bin2Dec](https://henriqueholtz.github.io/Holtz_Bin2Dec)** (by [github-pages](https://pages.github.com/))
 
-
-This is a project made with ReactJs for converter numbers of binary to decimal or on the contrary.
+[Branch holtz_bin2dec-reactjs](https://github.com/henriqueholtz/Holtz_Bin2Dec/tree/holtz_bin2dec-reactjs)
 
 ### Characteristics:
 
