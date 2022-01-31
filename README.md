@@ -1,35 +1,34 @@
-# Welcome to Holtz_Bin2Dec :sunglasses:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## You can **acess** this application in: 
+## Getting Started
 
-- **[holtzbin2dec.surge.sh](https://holtzbin2dec.surge.sh/)** (by [surge.sh](https://surge.sh))
--  **[henrique.holtz.github.io/Holtz_Bin2Dec](https://henriqueholtz.github.io/Holtz_Bin2Dec)** (by [github-pages](https://pages.github.com/))
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-This is a project made with ReactJs for converter numbers of binary to decimal or on the contrary.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Characteristics:
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-* :heavy_check_mark: **ReactJS**
-* :heavy_check_mark: **Material-UI**
-* :heavy_check_mark: **SASS**
-* :heavy_check_mark: **Dark/Light**
-* :heavy_check_mark: **Responsive**
-* :heavy_check_mark: **Simple Animation**
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-&nbsp;
-**[Prototype by @ncsantos.](https://www.figma.com/file/QDBBTkB1It2l7Esch1SKwl/Bin2Dec?node-id=0%3A1)** :boom:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-*Inspiration from [florinpop/app-ideas](https://github.com/florinpop17/app-ideas)*
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-#### You also can clone this repository, install it (with `yarn install`), and run it (with `yarn run`) only;
-##### After, you can access from `http://localhost:3000` in your prefer browser.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-#### **A short preview:**
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-LightMode:
-![image](https://user-images.githubusercontent.com/51380783/133703194-a5735d68-85c4-4f66-9ab9-896ec6ad101e.png)
+## Deploy on Vercel
 
-DarkMode:
-![image](https://user-images.githubusercontent.com/51380783/133703220-3fe0b2d0-b8d0-4f3d-b270-8ec49ed2d07b.png)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
