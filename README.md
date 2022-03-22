@@ -37,6 +37,7 @@
 * :heavy_check_mark: **Dark/Light**
 * :heavy_check_mark: **Responsive**
 * :heavy_check_mark: **Simple Animation**
+* :heavy_check_mark: **Docker (Dockerfile + docker-compose.yml)**
 
 &nbsp;
 **[Prototype by @ncsantos.](https://www.figma.com/file/QDBBTkB1It2l7Esch1SKwl/Bin2Dec?node-id=0%3A1)** :boom:
@@ -46,6 +47,10 @@
 
 #### You also can clone this repository, install it (with `yarn install`), and run it (with `yarn run`) only;
 ##### After, you can access from `http://localhost:3000` in your prefer browser.
+
+### Run with Docker (2 options):
+* `docker build -t holtzbin2dec:dev .` and soon: `docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm holtzbin2dec:dev`
+* `docker-compose up -d --build`
 
 #### **A short preview:**
 
