@@ -16,3 +16,6 @@ CMD ["npm", "start"]
 # build and run:
 # docker build -t holtzbin2dec:dev .
 # docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm holtzbin2dec:dev
+
+# docker-compose:
+# docker-compose up -d --build
