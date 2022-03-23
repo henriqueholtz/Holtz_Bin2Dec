@@ -6,32 +6,38 @@ import PropTypes from 'prop-types';
 import styles from '../CustomInput/styles.module.scss';
 
 const inputProps = {
-    min: 0
-}
+  min: 0,
+};
 
-export default function CustomInput({origin, value, type, onChange}) {
-    return (
-        <div>
-            <label className={styles.label} htmlFor={type}>{origin}</label>
-            <TextField
-                id={type}
-                className={styles.input}
-                value={value}
-                onChange={onChange} 
-                type="number"
-                inputProps={inputProps}
-                InputProps={{
-                    startAdornment: <InputAdornment position="start" className={styles.inputAdornment} >{type}</InputAdornment>
-                }}
-                variant="outlined"
-            />
-        </div>
-    )
+export default function CustomInput({ origin, value, type, onChange }) {
+  return (
+    <div>
+      <label className={styles.label} htmlFor={type}>
+        {origin}
+      </label>
+      <TextField
+        id={type}
+        className={styles.input}
+        value={value}
+        onChange={onChange}
+        type="number"
+        inputProps={inputProps}
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start" className={styles.inputAdornment}>
+              {type}
+            </InputAdornment>
+          ),
+        }}
+        variant="outlined"
+      />
+    </div>
+  );
 }
 
 CustomInput.propTypes = {
-    origin: PropTypes.oneOf(['From', 'To']).isRequired,
-    value: PropTypes.number.isRequired,
-    type: PropTypes.oneOf(['Binary', 'Decimal']).isRequired,
-    onChange: PropTypes.func.isRequired
-}
+  origin: PropTypes.oneOf(['From', 'To']).isRequired,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  type: PropTypes.oneOf(['Binary', 'Decimal']).isRequired,
+  onChange: PropTypes.func.isRequired,
+};
