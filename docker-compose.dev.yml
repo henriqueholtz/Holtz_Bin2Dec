@@ -9,11 +9,11 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - .:/app
-      - nextjs-dev-node_modules:/app/node_modules
-      - nextjs-dev-next:/app/.next
+      - holtzbin2dec-nextjs-dev-node_modules:/app/node_modules
+      - holtzbin2dec-nextjs-dev-next:/app/.next
     restart: always
 
 volumes:
-  nextjs-dev-node_modules:
-  nextjs-dev-next:
+  holtzbin2dec-nextjs-dev-node_modules:
+  holtzbin2dec-nextjs-dev-next:
 #docker-compose -f .\docker-compose.dev.yml up --build

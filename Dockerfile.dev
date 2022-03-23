@@ -4,6 +4,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
+COPY next.config.js ./
 
 RUN yarn install --frozen-lockfile
 CMD ["yarn" , "dev"]
