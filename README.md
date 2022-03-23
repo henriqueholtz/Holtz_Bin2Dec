@@ -17,9 +17,14 @@
 * :heavy_check_mark: **Dark/Light**
 * :heavy_check_mark: **Responsive**
 * :heavy_check_mark: **Simple Animation**
+* :heavy_check_mark: **Docker/docker-compose to development**
 
 #### You also can clone this repository, install it (with `yarn install`), and run it (with `yarn dev`) only;
 ##### After, you can access from `http://localhost:3000` in your prefer browser.
+
+### Run with Docker (2 options):
+* [development] `docker build -t holtzbin2dec-next:dev . -f .\Dockerfile.dev` and soon: `docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 holtzbin2dec-next:dev`
+* [development] `docker-compose -f .\docker-compose.dev.yml up --build`
 
 ## **ReactJs**
 ### You can **acess** this application in:
