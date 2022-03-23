@@ -14,6 +14,6 @@ services:
     restart: always
 
 volumes:
-  holtzbin2dec-nextjs-dev-node_modules:
-  holtzbin2dec-nextjs-dev-next:
+  holtzbin2dec-nextjs-dev-node_modules: {}
+  holtzbin2dec-nextjs-dev-next: {}
 #docker-compose -f .\docker-compose.dev.yml up --build
