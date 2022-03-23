@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  holtzbin2dec-nextjs:
+    ports:
+      - '3001:3000'
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+      - nextjs-dev-node_modules:/app/node_modules
+      - nextjs-dev-next:/app/.next
+    restart: always
+
+volumes:
+  nextjs-dev-node_modules:
+  nextjs-dev-next:
+#docker-compose -f .\docker-compose.dev.yml up --build

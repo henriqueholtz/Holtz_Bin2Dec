@@ -5,6 +5,19 @@ import Bin2Dec from '../Components/Bin2Dec';
 import Head from 'next/head';
 import '../styles/globalStyles.scss';
 
+const useStyles = makeStyles((theme) => ({
+  app: {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    textAlign: 'center',
+    backgroundColor: 'var(--bg-app)',
+    width: '100vw',
+    height: '100vh',
+  },
+}));
+
 export default function App() {
   const classes = useStyles();
   const [darkMode, setDarkMode] = useState(false);
@@ -31,16 +44,3 @@ export default function App() {
     </div>
   );
 }
-
-const useStyles = makeStyles((theme) => ({
-  app: {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    textAlign: 'center',
-    backgroundColor: 'var(--bg-app)',
-    width: '100vw',
-    height: '100vh',
-  },
-}));
